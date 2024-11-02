@@ -1,5 +1,34 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  /* padding: 16px; */
+  background-color: #000000;
+  color: #000000;
+  height: 100vh;
+}
+
+.left_column {
+  flex: 2;
+}
+
+.middle_column {
+  flex: 3;
+}
+
+.right_column {
+  flex: 4;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #ffffff;
+  /* padding: 16px; */
+  border-radius: 8px;
+  border: 1px solid black;
+  overflow-y: auto;
 }
 
 .App-logo {
