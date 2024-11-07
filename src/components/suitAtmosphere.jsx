@@ -3,6 +3,8 @@ import '../styles/suitAtmosphere.css';
 
 
 const SuitAtmosphere = ({ suitData = {} }) => {
+    
+
     return (
         <div className="suit-atmosphere">
             {/* Personal Data Panel */}
@@ -68,14 +70,14 @@ const SuitAtmosphere = ({ suitData = {} }) => {
 
                     {/* Second Column */}
                     <div className="suit-pressure-column">
-                        <div className="suit-data-row">
-                            <span className="suit-data-value suit-pressure-column2-item1 ">{suitData.suit_pressure_total || '00'}</span>
+                        <div className="suit-data-row suit-data-row1">
+                            <span className="suit-data-value">{suitData.suit_pressure_total || '00'}</span>
                             <div className="suit-data-label-group">
                                 <span className="unit-label">PSI</span>
                                 <span className="data-label">Pressure Total</span>
                             </div>
                         </div>
-                        <div className="suit-data-center">
+                        <div className="suit-data-row suit-data-row2">
                             <span className="suit-data-value">{suitData.helmet_pressure_co2 || '00'}</span>
                             <div className="suit-data-label-group">
                                 <span className="unit-label">PSI</span>
